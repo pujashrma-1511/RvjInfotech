@@ -1,3 +1,4 @@
+
 Match1_1 = ["vanilla" , "strawberry"]
 Match1_2 = ["blueberry" , "chocolate"]
 Match1_3 = ["blackcurrent" , "cookie"]
@@ -22,7 +23,10 @@ def ask_for_winner(flavours)
 	end
 end
 
-puts "Welcome to Ultimate Flavour Tournament!"
+
+
+
+puts "Welcome to Ultimate Flavour Tournament!".center(50)
 puts
 puts "Round 1"
 puts "Match 1: Which flavour is best?"

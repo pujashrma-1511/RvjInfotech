@@ -1,3 +1,5 @@
+class RomanNO
+
 def old_roman_numeral(num)
 
  roman = ""
@@ -10,8 +12,17 @@ def old_roman_numeral(num)
  roman = roman + "I" * (num % 5 / 1)
  roman
 
- end
+ puts roman
 
+end
+end
 
-puts(old_roman_numeral(1999))
+# puts(old_roman_numeral(1999))
+
+obj = RomanNO.new
+obj.old_roman_numeral(1999)
+obj.old_roman_numeral(2000)
+obj.old_roman_numeral(2020)
+obj.old_roman_numeral(2)
+obj.old_roman_numeral(10)
       

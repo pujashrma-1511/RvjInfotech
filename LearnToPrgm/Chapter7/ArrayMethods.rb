@@ -8,6 +8,7 @@
 # puts
 # puts foods.join(" :) ") + " 8)"
 
+class SortArray
 
 puts "Give me some words and i will sort them:"
 words = []
@@ -18,9 +19,15 @@ while true
 		break
 	end
 
-	words.push(word)
+ words.push(word)
+
+end
+ sorted_words = words.sort
+
+ puts "Sweet! Here they are, sorted:"
+ puts sorted_words
+
 end
 
-puts "Sorted list of words are here:"
-puts words.sort
+obj = SortArray.new
 

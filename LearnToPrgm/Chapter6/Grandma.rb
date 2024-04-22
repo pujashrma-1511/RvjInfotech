@@ -15,10 +15,15 @@
 # end
 	
 # end
+class Test
 
 puts "Hey Grandma, Sonny here!"
 bye_count = 0
+
+def my_Method
+
 while true
+
 	say = gets.chomp
 
 	if say == "BYE"
@@ -36,6 +41,12 @@ while true
 	else
 		ran_year = 1930 + rand(20)
 		puts "NO, NOT SINCE #{ran_year}!"
-end
+    end
 	
 end
+end
+
+end
+
+obj = Test.new
+obj.my_Method()

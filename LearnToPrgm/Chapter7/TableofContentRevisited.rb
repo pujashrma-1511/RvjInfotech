@@ -1,3 +1,7 @@
+class Tob
+
+
+
 title = "Table of Contents"
 
 Chapters = [["Numbers",   1],
@@ -20,3 +24,6 @@ Chapters = [["Numbers",   1],
  	chap_no = chap_no + 1
  end
 
+end
+
+obj = Tob.new()

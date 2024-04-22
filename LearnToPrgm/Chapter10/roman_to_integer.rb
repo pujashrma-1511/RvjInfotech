@@ -1,3 +1,5 @@
+class RomanToInt
+
 def roman_to_integer(roman)
 digit_vals = {"i" => 1,
               "v" => 5,
@@ -27,9 +29,11 @@ while index >= 0
     total = total + val 
 end
 
-total
+puts total
+end
 end
 
-puts(roman_to_integer("mcmxcix"))
-puts(roman_to_integer("CCCLXV"))
+obj = RomanToInt.new
+obj.roman_to_integer("mcmxcix")
+obj.roman_to_integer("CCCLXV")
 
