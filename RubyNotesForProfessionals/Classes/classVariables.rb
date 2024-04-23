@@ -1,44 +1,35 @@
-# class Dinosaur
-#  @@classification = "Like a Reptile, but like a bird"
+class Dinosaur
+ @@classification = "Like a Reptile, but like a bird"
 
-#  def self.classification
-#  p @@classification
-#  end
-#  def classification
-#  p @@classification
-#  end
-# end
-# dino = Dinosaur.new
-# dino.classification
-# Dinosaur.classification
+ def self.classification
+ p @@classification
+ end
+ def classification
+ p @@classification
+ end
+end
+dino = Dinosaur.new
+dino.classification
+Dinosaur.classification
 
-# class Trex < Dinosaur
-# 	@@classification = "Big teeth bird!"
-# end
-
-# Trex.classification
-# Dinosaur.classification
-
-# module SomethingStrange
-#  @@classification = "Something Strange"
-# end
-# class DuckDinosaur < Dinosaur
-#  include SomethingStrange
-# end
-# DuckDinosaur.class_variables
-# SomethingStrange.class_variables
-# DuckDinosaur.classification
-
-def some_method
-	method_scope_var = "hi there"
-	p method_scope_var
+class Trex < Dinosaur
+	@@classification = "Big teeth bird!"
 end
 
-some_method
+Trex.classification
+Dinosaur.classification
 
-2.times do |n|
-	local_var = n + 1
-	p local_var
+module SomethingStrange
+ @@classification = "Something Strange"
 end
+class DuckDinosaur < Dinosaur
+ include SomethingStrange
+end
+puts "------------"
+puts DuckDinosaur.class_variables
+SomethingStrange.class_variables
+DuckDinosaur.classification
+puts "========="
 
-local_var
+
+
