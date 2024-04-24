@@ -8,8 +8,8 @@ class Cat
 		p "I'm #{@name} and I'm #{@age} years old"
 	end
  
-	def ==(other)
-		self.own_age == other.own_age
+	def default
+		puts "hello"
 	end
 
 	protected
@@ -18,11 +18,11 @@ class Cat
 	end
 end
 
-cat1 = Cat.new("lucy", 2)
-cat1.speak
-cat2 = Cat.new("stewart", 4)
-cat2.speak
-cat3 = Cat.new("cooper", 2)
-cat3.speak
-cat1 == cat2
-cat1 == cat3
+p cat1 = Cat.new("lucy", 2)
+ cat1.speak
+p cat2 = Cat.new("stewart", 4)
+ cat2.speak
+p cat3 = Cat.new("cooper", 2)
+ cat3.speak
+ cat1.default
+
